@@ -8,7 +8,7 @@
 
 ```bash
 git add "README.md"
-git commit -m "增添内容"
+git commit -m "修改内容"
 git branch -M main
 git push -u origin main
 ```
@@ -111,7 +111,7 @@ git push -u origin main
 
 ​	`git rm 文件名 --cached`
 
-​	`git rm -f 文件夹名 --cached`
+​	`git rm -r 文件夹名 --cached`
 
 第三步：提交
 
