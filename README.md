@@ -2,7 +2,18 @@
 
 ## 一、说明
 
-​	本仓库是本人主要用来存放学习git的一些命令以及心得。
+本仓库是本人主要用来存放学习git的一些命令以及心得。
+
+本仓库的`README.md`文件更改后简易的提交代码：(直接复制粘贴到`Git Bash`命令行即可)
+
+```bash
+git add "README.md"
+git commit -m "增添内容"
+git branch -M main
+git push -u origin main
+```
+
+
 
 ## 二、项目上传
 
@@ -90,7 +101,25 @@ git push -u origin main
 
 ### 1.本地与远程仓库的连接
 
+### 2.删除远程仓库中多余的文件或者文件夹
 
+第一步：先pull远程代码，保持同步:
+
+​	`git pull`
+
+第二步：删除文件:
+
+​	`git rm 文件名 --cached`
+
+​	`git rm -f 文件夹名 --cached`
+
+第三步：提交
+
+​	`git commit -m` "备注"
+
+第四步：推送
+
+​	`git push`，这个使用前提是：已经使用过这个命令`git push -u origin main`
 
 
 
