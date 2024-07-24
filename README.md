@@ -135,4 +135,47 @@ git push -u origin main
 
 参考：[git 查看已经放到本地仓库的文件／查看还没添加的文件 - 简书 (jianshu.com)](https://www.jianshu.com/p/ad148fda5860?utm_campaign)
 
-​	
+### 4.项目下载(克隆)
+
+1、新建一个目录，存放下载下来的项目，例如我在D盘新建了一个`GitClonePro`文件夹，用来存放下载下来的项目
+
+![](images/新建文件夹.png)
+
+2、进入刚刚新建的文件夹，即进入`GitClonePro`，点击鼠标右键，选择"Git Bash Here",如下图：
+
+![](images/GitBash.png)
+
+2.1点击“Git Bash Here”之后，可以看到下面界面，否则，可能是你的Git Bash安装有问题
+
+![](images/GitBash2.png)
+
+3.进行基础配置，作为 git 的基础配置，作用是告诉 git 你是谁，你输入的信息将出现在你创建的提交中，使用下面两条命令：
+
+```bash
+git config --global user.name "你的名字或昵称"
+git config --global user.email "你的邮箱"
+```
+
+4、在`GitClonePro`文件夹中执行下面命令，完成初始化
+
+```bash
+git init
+```
+
+5.克隆
+
+复制指定仓库的 **`http`地址**
+
+```bash
+git clone <http地址>
+```
+
+6.若想要进行更新，则进入该项目文件夹
+
+```bash
+git pull origin master 
+```
+
+参考：[git 下载项目到本地_git bash here下载项目-CSDN博客](https://blog.csdn.net/Janson_Lin/article/details/85072634)
+
+​	[【小白git入门使用教程】使用git从github下载项目到本地以及本地项目上传github_github怎么讲项目下载到本地然后提交-CSDN博客](https://blog.csdn.net/Luyoom/article/details/109711832)
