@@ -121,6 +121,8 @@ git push -u origin main
 
 ​	`git push`，这个使用前提是：已经使用过这个命令`git push -u origin main`
 
+参考：[git 删除远程仓库中多余的文件或者文件夹_git删除远程仓库文件-CSDN博客](https://blog.csdn.net/u014678583/article/details/115195605)
+
 ### 3.查看已经放到本地仓库的文件／查看还没添加的文件
 
 查看已存放：（这个最有用）
