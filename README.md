@@ -121,6 +121,16 @@ git push -u origin main
 
 ​	`git push`，这个使用前提是：已经使用过这个命令`git push -u origin main`
 
+### 3.查看已经放到本地仓库的文件／查看还没添加的文件
 
+查看已存放：（这个最有用）
+
+> git ls-files
+
+查看还没添加的文件：
+
+> git status
+
+参考：[git 查看已经放到本地仓库的文件／查看还没添加的文件 - 简书 (jianshu.com)](https://www.jianshu.com/p/ad148fda5860?utm_campaign)
 
 ​	
