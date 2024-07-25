@@ -179,3 +179,42 @@ git pull origin master
 参考：[git 下载项目到本地_git bash here下载项目-CSDN博客](https://blog.csdn.net/Janson_Lin/article/details/85072634)
 
 ​	[【小白git入门使用教程】使用git从github下载项目到本地以及本地项目上传github_github怎么讲项目下载到本地然后提交-CSDN博客](https://blog.csdn.net/Luyoom/article/details/109711832)
+
+### 5.项目上传
+
+在之前将项目上传到`github`的过程中，都是新建了一个文件夹，然后将项目放进该文件夹中，最后在该文件夹进行项目上传的。我有一个思维误区，认为所有项目上传都应该这样，但是实际上并不是。还可以有另外一种方法：
+
+直接在项目文件夹里面进行项目的上传，示例：
+
+我在`D:\resource\VsPro`目录下创建了一个项目文件，命名为：`tictactoe`，如图所示：
+
+![](images/4.png)
+
+然后，进入该文件夹，该文件夹内容如图所示：
+
+![](images/5.png)
+
+之后，可通过两种方法在将该文件夹作为仓库：
+
+- 参考之前所述的**“ 五、其他->4.项目下载（克隆）”**
+
+- 使用`Git Bash` 命令行进入该文件夹，然后使用以下代码进行上传：
+
+- ```bash
+  git init
+  git add .
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin git@github.com:用户名/仓库名.git
+  git push -u origin main
+  ```
+
+  后续若要继续上传（例如项目文件有所更新），则使用下面的代码：
+
+  ```bash
+  git add .
+  git commit -m "备注"
+  git push -u origin main
+  ```
+
+  
